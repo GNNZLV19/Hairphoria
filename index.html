@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" xintegrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         /* Base styles using Inter font */
         body {
@@ -18,7 +17,6 @@
             background-color: #0f172a; /* Slate 900 for dark background */
             color: #cbd5e1; /* Slate 300 for dark text */
             line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         /* --- Scroll Animation --- */
@@ -42,12 +40,8 @@
         }
         
         @keyframes blink {
-            from, to {
-                color: transparent;
-            }
-            50% {
-                color: inherit;
-            }
+            from, to { color: transparent; }
+            50% { color: inherit; }
         }
         
         /* Custom border for project cards */
@@ -60,17 +54,6 @@
             overflow: hidden;
             transition: max-height 0.5s ease-in-out;
         }
-        
-        /* Ensure the PDF generation doesn't cut off content */
-        @media print {
-            body {
-                -webkit-print-color-adjust: exact;
-            }
-            .no-print {
-                display: none !important;
-            }
-        }
-
     </style>
 </head>
 
@@ -79,7 +62,7 @@
 
         <header class="text-center mb-12 pt-8 sm:pt-0">
             <h1 class="text-5xl font-bold text-slate-100">GONZALO VOLANTE</h1>
-            <p id="subtitle" data-text="Desarrollador de Automatización y Especialista en IA | Frontend Developer" class="text-xl text-blue-400 font-medium mt-2 h-7"></p>
+            <p id="subtitle" data-text="Frontend Developer | Especialista en Automatización e IA" class="text-xl text-blue-400 font-medium mt-2 h-7"></p>
         </header>
 
         <main class="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -96,7 +79,9 @@
                         <a href="https://www.linkedin.com/in/gonzalo-volante/" target="_blank" class="flex items-center hover:text-blue-400 transition-colors">
                             <i data-lucide="linkedin" class="w-4 h-4 mr-3 text-slate-400"></i> LinkedIn
                         </a>
-                       
+                         <a href="https://github.com/GVolante" target="_blank" class="flex items-center hover:text-blue-400 transition-colors">
+                            <i data-lucide="github" class="w-4 h-4 mr-3 text-slate-400"></i> GitHub
+                        </a>
                     </div>
                     
                 </div>
@@ -111,10 +96,7 @@
                             <p class="font-semibold text-slate-200">Diseño UX/UI</p>
                             <p class="text-slate-400">Coder House (2021)</p>
                         </div>
-                        <div>
-                            <p class="font-semibold text-slate-200">Bachiller en Ciencias Naturales</p>
-                            <p class="text-slate-400">Colegio del Cerro, Salta (2018)</p>
-                        </div>
+                        
                     </div>
                 </div>
             </aside>
@@ -123,13 +105,13 @@
                 <section class="scroll-animate">
                     <h2 class="text-slate-100 border-b-2 border-slate-700 pb-2 mb-6 text-2xl font-bold">Perfil Profesional</h2>
                     <p class="text-base leading-relaxed">
-                        Desarrollador Frontend proactivo y orientado a resultados, con especialización demostrada en la arquitectura e implementación de soluciones de automatización y la integración de Inteligencia Artificial para transformar procesos de negocio. Actualmente me dedico a convertir requerimientos complejos en sistemas autónomos, eficientes y escalables, utilizando n8n para orquestar un ecosistema de APIs que incluye Google Cloud, Meta (WhatsApp), OpenAI y Google Workspace. Busco aplicar mis habilidades en entornos desafiantes para crear productos tecnológicos innovadores y de alto impacto.
+                        Desarrollador enfocado en la creación de automatizaciónes y de soluciones web desde 0. Me apasiona transformar ideas complejas en productos funcionales y eficientes. Mi enfoque combina un sólido conocimiento técnico con metodologias agiles y una comunicación clara para guiar proyectos y alinear equipos, asegurando el cumplimiento de objetivos para resolver problemas de negocio reales.
                     </p>
                 </section>
 
                 <section class="scroll-animate">
                     <h2 class="text-slate-100 border-b-2 border-slate-700 pb-2 mb-6 text-2xl font-bold">Experiencia y Proyectos Clave</h2>
-                    <p class="mb-6 font-semibold text-lg text-slate-200">Desarrollador web y de soluciones automatizadas | 2021 - 2025</p>
+                    <p class="mb-6 font-semibold text-lg text-slate-200">Desarrollador web y de soluciones automatizadas | 2021 - 2025 </p>
                     
                     <div id="projects-accordion" class="space-y-6">
 
@@ -142,14 +124,13 @@
                             </button>
                             <div class="accordion-content">
                                 <div class="px-6 pb-6 space-y-4 text-sm text-slate-300">
-                                    <p>Participé en el desarrollo frontend de una solución FinTech para creadores de contenido. La plataforma resuelve problemáticas fiscales, construida con un backend en Java y frontend en React con TypeScript.</p>
+                                    <p>Como miembro clave del equipo frontend, contribuí al desarrollo de una solución FinTech para creadores de contenido, resolviendo problemáticas fiscales complejas.</p>
                                     <div class="flex flex-wrap gap-2 mt-2">
                                          <span class="tag bg-slate-900/50 text-slate-300 text-xs font-medium px-2.5 py-1 rounded-full">React</span>
                                          <span class="tag bg-slate-900/50 text-slate-300 text-xs font-medium px-2.5 py-1 rounded-full">TypeScript</span>
                                          <span class="tag bg-slate-900/50 text-slate-300 text-xs font-medium px-2.5 py-1 rounded-full">Java</span>
                                          <span class="tag bg-slate-900/50 text-slate-300 text-xs font-medium px-2.5 py-1 rounded-full">PostgreSQL</span>
                                          <span class="tag bg-slate-900/50 text-slate-300 text-xs font-medium px-2.5 py-1 rounded-full">JUnit</span>
-                                         <span class="tag bg-slate-900/50 text-slate-300 text-xs font-medium px-2.5 py-1 rounded-full">Mockito</span>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +143,7 @@
                             </button>
                             <div class="accordion-content">
                                 <div class="px-6 pb-6 space-y-4 text-sm text-slate-300">
-                                    <p>Proyecto final integrador. Desarrollo de una plataforma full-stack para la administración de una clínica dental, con gestión de pacientes, odontólogos, turnos, y roles de usuario (admin/user).</p>
+                                    <p>Lideré el desarrollo de una plataforma full-stack para la administración de una clínica dental, gestionando pacientes, odontólogos, y turnos con roles de usuario.</p>
                                     <div class="flex flex-wrap gap-2 mt-2">
                                          <span class="tag bg-purple-900/50 text-purple-300 text-xs font-medium px-2.5 py-1 rounded-full">Java</span>
                                          <span class="tag bg-purple-900/50 text-purple-300 text-xs font-medium px-2.5 py-1 rounded-full">Spring Boot</span>
@@ -177,14 +158,14 @@
 
                         <div class="bg-slate-800 rounded-lg shadow-lg project-card border-orange-400 hover:shadow-xl hover:shadow-orange-900/40 hover:-translate-y-1 transition-all">
                             <button class="accordion-button w-full text-left p-6 flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-slate-200">Consultoría para Laboratorio Bioquímico</h3>
+                                <h3 class="text-lg font-semibold text-slate-200">Análisis y Estrategia para Laboratorio Bioquímico SARESA</h3>
                                 <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
                             </button>
                             <div class="accordion-content">
                                 <div class="px-6 pb-6 space-y-4 text-sm text-slate-300">
-                                    <p>Actualmente en fase de análisis y relevamiento de requerimientos para un laboratorio bioquímico, identificando puntos de dolor en sus flujos de trabajo con el objetivo de proponer e implementar soluciones de automatización personalizadas.</p>
+                                    <p>Liderando la fase de consultoría para identificar puntos de dolor y definir una hoja de ruta para la implementación de soluciones de automatización que optimicen los flujos de trabajo del laboratorio.</p>
                                     <div class="flex flex-wrap gap-2 mt-2">
-                                         <span class="tag bg-orange-900/50 text-orange-300 text-xs font-medium px-2.5 py-1 rounded-full">Consultoría</span>
+                                         <span class="tag bg-orange-900/50 text-orange-300 text-xs font-medium px-2.5 py-1 rounded-full">Consultoría Estratégica</span>
                                          <span class="tag bg-orange-900/50 text-orange-300 text-xs font-medium px-2.5 py-1 rounded-full">Análisis de Procesos</span>
                                          <span class="tag bg-orange-900/50 text-orange-300 text-xs font-medium px-2.5 py-1 rounded-full">Automatización</span>
                                     </div>
@@ -194,12 +175,12 @@
 
                         <div class="bg-slate-800 rounded-lg shadow-lg project-card border-blue-400 hover:shadow-xl hover:shadow-blue-900/40 hover:-translate-y-1 transition-all">
                             <button class="accordion-button w-full text-left p-6 flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-slate-200">Asistente IA "OdontIA" para Gestión de Clínica Dental</h3>
+                                <h3 class="text-lg font-semibold text-slate-200">Asistente IA "OdontIA" para Clínica Dental</h3>
                                 <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
                             </button>
                             <div class="accordion-content">
                                 <div class="px-6 pb-6 space-y-4 text-sm text-slate-300">
-                                    <p>Diseñé y construí un agente conversacional autónomo para gestionar la interacción con pacientes vía WhatsApp. El sistema automatiza el registro de pacientes, gestiona agendas con enlaces únicos a calendarios, procesa audios e imágenes con IA y mantiene una memoria conversacional persistente.</p>
+                                    <p>Diseñé y construí un agente conversacional autónomo para gestionar la interacción con pacientes, automatizando el registro, agendamiento y procesamiento multimedia.</p>
                                     <div class="flex flex-wrap gap-2 mt-2">
                                          <span class="tag bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-1 rounded-full">n8n</span>
                                          <span class="tag bg-blue-900/50 text-blue-300 text-xs font-medium px-2.5 py-1 rounded-full">OpenAI (GPT-4)</span>
@@ -211,35 +192,16 @@
                         </div>
                         <div class="bg-slate-800 rounded-lg shadow-lg project-card border-indigo-400 hover:shadow-xl hover:shadow-indigo-900/40 hover:-translate-y-1 transition-all">
                             <button class="accordion-button w-full text-left p-6 flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-slate-200">Automatización de Análisis Geográfico con Python</h3>
+                                <h3 class="text-lg font-semibold text-slate-200">Automatización de análisis geográfico para el Ordenamiento Territorial de Bosques Nativos de Salta</h3>
                                 <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
                             </button>
                             <div class="accordion-content">
                                 <div class="px-6 pb-6 space-y-4 text-sm text-slate-300">
-                                    <p>Desarrollé un script en Python para automatizar el análisis de imágenes satelitales. El script calcula índices (NDVI, NDWI), detecta cambios entre fechas y genera automáticamente reportes con estadísticas y mapas de las áreas de interés.</p>
+                                    <p>Desarrollé un script en Python que automatiza el análisis de imágenes satelitales, calculando índices (NDVI, NDWI) y detectando cambios para generar reportes automáticos.</p>
                                     <div class="flex flex-wrap gap-2 mt-2">
                                          <span class="tag bg-indigo-900/50 text-indigo-300 text-xs font-medium px-2.5 py-1 rounded-full">Python</span>
                                          <span class="tag bg-indigo-900/50 text-indigo-300 text-xs font-medium px-2.5 py-1 rounded-full">QGIS</span>
                                          <span class="tag bg-indigo-900/50 text-indigo-300 text-xs font-medium px-2.5 py-1 rounded-full">Google Earth Engine</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                           <div class="bg-slate-800 rounded-lg shadow-lg project-card border-teal-400 hover:shadow-xl hover:shadow-teal-900/40 hover:-translate-y-1 transition-all">
-                            <button class="accordion-button w-full text-left p-6 flex justify-between items-center">
-                                <h3 class="text-lg font-semibold text-slate-200">Agente de IA con RAG para Consulta de Documentos</h3>
-                                <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform"></i>
-                            </button>
-                            <div class="accordion-content">
-                                <div class="px-6 pb-6 space-y-4 text-sm text-slate-300">
-                                    <p>Creé un agente de IA capaz de responder preguntas sobre documentos (PDFs) usando RAG. El sistema vectoriza el contenido, lo almacena en Supabase (pgvector) y usa OpenAI para generar respuestas precisas basadas en el contexto recuperado, con interacción vía WhatsApp.</p>
-                                    <div class="flex flex-wrap gap-2 mt-2">
-                                         <span class="tag bg-teal-900/50 text-teal-300 text-xs font-medium px-2.5 py-1 rounded-full">n8n</span>
-                                         <span class="tag bg-teal-900/50 text-teal-300 text-xs font-medium px-2.5 py-1 rounded-full">OpenAI</span>
-                                         <span class="tag bg-teal-900/50 text-teal-300 text-xs font-medium px-2.5 py-1 rounded-full">Supabase</span>
-                                         <span class="tag bg-teal-900/50 text-teal-300 text-xs font-medium px-2.5 py-1 rounded-full">PostgreSQL</span>
-                                         <span class="tag bg-teal-900/50 text-teal-300 text-xs font-medium px-2.5 py-1 rounded-full">Qdrant</span>
                                     </div>
                                 </div>
                             </div>
@@ -251,9 +213,13 @@
                     <h2 class="text-slate-100 border-b-2 border-slate-700 pb-2 mb-6 text-2xl font-bold">Competencias Técnicas</h2>
                     <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                             <div>
+                                <h4 class="font-semibold mb-2 text-slate-200">Liderazgo y Gestión</h4>
+                                <p class="text-sm text-slate-300">Liderazgo Técnico, Coaching de Equipos, Gestión de Proyectos, Metodologías Ágiles, SCRUM.</p>
+                            </div>
                             <div>
                                 <h4 class="font-semibold mb-2 text-slate-200">Automatización y Low-Code</h4>
-                                <p class="text-sm text-slate-300"><strong class="text-blue-400">n8n (Avanzado)</strong>, Diseño de Workflows, Integración de APIs, Lógica Condicional.</p>
+                                <p class="text-sm text-slate-300"><strong class="text-blue-400">n8n (Avanzado)</strong>, Diseño de Workflows, Integración de APIs.</p>
                             </div>
                              <div>
                                 <h4 class="font-semibold mb-2 text-slate-200">Lenguajes de Programación</h4>
@@ -265,15 +231,11 @@
                             </div>
                              <div>
                                 <h4 class="font-semibold mb-2 text-slate-200">Cloud, DevOps y Bases de Datos</h4>
-                                <p class="text-sm text-slate-300">Google Cloud Platform, <strong class="text-blue-400">Docker</strong>, MySQL, <strong class="text-blue-400">PostgreSQL</strong>, <strong class="text-blue-400">Supabase</strong>.</p>
+                                <p class="text-sm text-slate-300">GCP, <strong class="text-blue-400">Docker</strong>, MySQL, <strong class="text-blue-400">PostgreSQL</strong>, <strong class="text-blue-400">Supabase</strong>.</p>
                             </div>
                              <div>
-                                <h4 class="font-semibold mb-2 text-slate-200">Sistemas de Info. Geográfica (GIS)</h4>
-                                <p class="text-sm text-slate-300">QGIS, <strong class="text-blue-400">Google Earth Engine</strong>, Python, QGIS, ARCgis.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-semibold mb-2 text-slate-200">Frontend y Diseño</h4>
-                                <p class="text-sm text-slate-300">React, Figma, UX/UI Design, Design Thinking.</p>
+                                <h4 class="font-semibold mb-2 text-slate-200">GIS y Diseño</h4>
+                                <p class="text-sm text-slate-300">Google Earth Engine, QGIS, Figma, UX/UI.</p>
                             </div>
                         </div>
                     </div>
@@ -286,35 +248,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Initialize Lucide Icons
             lucide.createIcons();
-
-            // --- PDF DOWNLOAD LOGIC ---
-            const downloadButton = document.getElementById('download-button');
-            if(downloadButton) {
-                downloadButton.addEventListener('click', () => {
-                    const element = document.getElementById('cv-container');
-                    const downloadBtnContainer = downloadButton.parentElement;
-
-                    // Hide the button container so it doesn't appear in the PDF
-                    downloadBtnContainer.classList.add('no-print');
-                    
-                    const opt = {
-                      margin:       0.2,
-                      filename:     'CV-Gonzalo-Volante.pdf',
-                      image:        { type: 'jpeg', quality: 0.98 },
-                      html2canvas:  { scale: 2, useCORS: true },
-                      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-                    };
-
-                    // Generate the PDF
-                    html2pdf().from(element).set(opt).save().then(() => {
-                        // Show the button again after a short delay
-                         setTimeout(() => {
-                             downloadBtnContainer.classList.remove('no-print');
-                         }, 500);
-                    });
-                });
-            }
-
 
             // --- ACCORDION LOGIC ---
             const accordionContainer = document.getElementById('projects-accordion');
